@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Att göra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="./storage.js" defer></script>
+  <script src="./dom.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <p class="header-eyebrow">Lista</p>
+    <h1>Att göra</h1>
+  </header>
+
+  <!-- Input -->
+  <div class="add-card">
+    <input
+      type="text"
+      id="task-input"
+      placeholder="Lägg till en uppgift…"
+      autocomplete="off"
+      maxlength="200"
+    />
+    <div class="due-divider"></div>
+    <input
+      type="date"
+      id="due-input"
+      title="Senast datum"
+    />
+    <button id="add-btn">+ Lägg till</button>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters" role="tablist">
+    <button class="filter-btn active" data-filter="all"    role="tab">Alla</button>
+    <button class="filter-btn"        data-filter="active" role="tab">Aktiva</button>
+    <button class="filter-btn"        data-filter="done"   role="tab">Klara</button>
+  </div>
+
+  <!-- List -->
+  <!-- Search -->
+  <div class="search-bar">
+    <span class="search-icon">⌕</span>
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Sök uppgift…"
+      autocomplete="off"
+      maxlength="200"
+    />
+    <button id="search-clear" aria-label="Rensa sökning">✕</button>
+  </div>
+
+  <ul id="task-list" aria-label="Uppgiftslista">
+
+    <!-- Exempeluppgift 1 – aktiv med "idag"-datum -->
+    <li class="task-item" data-id="example-1" data-due="2026-03-25">
+      <span class="drag-handle">⠿</span>
+      <input type="checkbox" class="task-checkbox" />
+      <label class="task-label">Köpa mjölk och bröd</label>
+      <span class="due-tag today">Senast 25 mars</span>
+      <button class="delete-btn" aria-label="Ta bort">✕</button>
+    </li>
+
+    <!-- Exempeluppgift 2 – klar med överförfallet datum -->
+    <li class="task-item done" data-id="example-2" data-due="2026-03-20">
+      <span class="drag-handle">⠿</span>
+      <input type="checkbox" class="task-checkbox" checked />
+      <label class="task-label">Skicka rapport till chefen</label>
+      <span class="due-tag overdue">Senast 20 mars</span>
+      <button class="delete-btn" aria-label="Ta bort">✕</button>
+    </li>
+
+  </ul>
+
+  <!-- Empty state -->
+  <div id="empty-state">
+    <p>Inget att göra just nu.</p>
+    <span>Lägg till en uppgift ovan</span>
+  </div>
+
+  <!-- Footer -->
+  <div class="list-footer">
+    <span id="task-count">0 uppgifter kvar</span>
+    <button id="clear-done-btn">Rensa klara</button>
+  </div>
+
+</div>
+</body>
+</html>

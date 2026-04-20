@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - WestCoast Education</title>
+<script type="module" src="js/admin.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>WestCoast Education - Admin</h1>
+<nav>
+<a href="index.html" class="navLink">Hem</a>
+<a href="#coursesList" class="navLink">Kurser</a>
+<a href="login.html">Logga in</a>
+<a href="signup.html">Registrera</a>
+<a href="admin.html">Admin</a>
+<a href="#" id="logoutBtn">Logga ut</a>
+<a href="myBookings.html">Mina bokningar</a>
+</nav>
+</header>
+<main>
+
+<section>
+
+<h3>Lägg till kurs</h3>
+
+<form id="addCourseForm">
+
+<input type="text" id="title" placeholder="Kurstitel" required>
+<input type="text" id="courseNumber" placeholder="Kursnummer" required>
+<input type="number" id="days" placeholder="Antal dagar" required>
+<input type="number" id="price" placeholder="Pris" required>
+
+<button type="submit">Lägg till kurs</button>
+</form>
+</section>
+<section id="adminCourses">
+<h3>Kurser</h3>
+</section>
+
+<section id="adminBookings">
+<h3>Bokningar</h3>
+</section>
+</main>
+<footer>
+<p>WestCoast Education</p>
+<p>📞 +46 31 123 456</p>
+<p>📧 <a href="mailto:info@westcoasteducation.se">info@westcoasteducation.se</a></p>
+</footer>
+</body>
+</html>

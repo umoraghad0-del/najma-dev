@@ -1,0 +1,354 @@
+/* --- Global --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #004080;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    padding: 20px;
+    background: #e0e0e0;
+}
+
+section {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #004080;
+}
+
+/* --- Kurskort på startsidan / hem --- */
+.coursesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.courseCard {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.courseCard img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.courseCard h3 {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.courseCard p {
+    text-align: center;
+    margin: 3px 0;
+}
+
+.courseCard button {
+    padding: 8px 12px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.courseCard button:hover {
+    background: #0066cc;
+}
+
+.courseCard{
+border:1px solid #ddd;
+padding:20px;
+border-radius:10px;
+width:280px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+#coursesList{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+button{
+background:#0066ff;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#004ecc;
+}
+/* --- Kursdetaljer sida --- */
+.courseDetailTitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#courseDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    background: white;
+}
+
+#courseDetail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#courseDetail h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#courseDetail p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+#courseDetail button {
+    margin-top: 15px;
+    padding: 10px 16px;
+    font-size: 16px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#courseDetail button:hover {
+    background: #0066cc;
+}
+
+/* FORM CENTER */
+
+/* CENTER FORM PAGE */
+
+.formSection{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:70vh;
+}
+
+
+/* FORM CARD */
+
+.formCard{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+width:350px;
+text-align:center;
+}
+
+
+.formCard h2{
+margin-bottom:25px;
+}
+
+
+/* INPUTS */
+
+.formCard form{
+display:flex;
+flex-direction:column;
+gap:10px;
+text-align:left;
+}
+
+
+.formCard input{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:14px;
+}
+
+
+/* BUTTON */
+
+.formCard button{
+margin-top:15px;
+padding:10px;
+background:#004080;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+
+.formCard button:hover{
+background:#0066cc;
+}
+footer {
+  background-color: #1b263b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* =========================
+ADMIN PAGE
+========================= */
+
+/* admin form container */
+
+#addCourseForm{
+
+background:#ffffff;
+
+padding:25px;
+
+border-radius:10px;
+
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+
+width:350px;
+
+margin:30px auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+/* inputs */
+
+#addCourseForm input{
+
+padding:10px;
+
+border:1px solid #ccc;
+
+border-radius:6px;
+
+font-size:14px;
+
+}
+
+/* button */
+
+#addCourseForm button{
+
+background:#1b263b;
+
+color:white;
+
+border:none;
+
+padding:10px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+font-size:15px;
+
+}
+
+#addCourseForm button:hover{
+
+background:#415a77;
+
+}
+
+
+/* admin course + booking cards */
+
+#adminCourses,
+#adminBookings{
+
+max-width:600px;
+
+margin:30px auto;
+
+}
+
+
+/* cards */
+
+.adminCard{
+
+background:#ffffff;
+
+padding:15px;
+
+margin:10px 0;
+
+border-radius:8px;
+
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+
+}
+
+#userInfo {
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+/* --- Mobilanpassning --- */
+@media (max-width: 600px) {
+    .courseCard {
+        width: 100%;
+    }
+}
