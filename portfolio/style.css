@@ -45,8 +45,20 @@ nav a:hover {
 section {
     padding: 60px 20px;
     max-width: 900px;
-    margin: 0 auto; 
+    margin: 0 auto;  
+    margin-bottom: 40px;
     border-bottom: 1px solid #1e293b;
+}
+
+section a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
 }
 
 h1, h2, h3 {
