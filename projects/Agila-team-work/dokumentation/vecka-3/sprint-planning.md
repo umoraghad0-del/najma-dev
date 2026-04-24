@@ -1,1 +1,0 @@
-Vi har bedömt varje uppgifts tidsåtgång och om det inte stämmer med verkligheten så ändrar vi det. Samma som andra veckorna men denna vecka var det bara mindre saker som behöver fixas så vi kom överens att de hamnade runt s/xs.

@@ -176,8 +176,7 @@ ul {
   background-color: #38bdf8;
   color: #020617;
 }
-
-.project-card:first-child {
+.project-card.featured {
   border: 2px solid #38bdf8;
 }
 

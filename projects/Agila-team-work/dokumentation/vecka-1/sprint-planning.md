@@ -1,2 +1,0 @@
-# Planning Poker
-Vi har bedömt varje uppgifts tidsåtgång och om det inte stämmer med verkligheten så ändrar vi det
