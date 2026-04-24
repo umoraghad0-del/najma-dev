@@ -133,6 +133,54 @@ ul {
   text-align: center;
 }
 
+.project-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  transition: all 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+.project-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+.project-card strong {
+  color: #38bdf8;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 14px;
+  background-color: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.project-card a:hover {
+  background-color: #38bdf8;
+  color: #020617;
+}
+
+.project-card:first-child {
+  border: 2px solid #38bdf8;
+}
+
 footer {
   text-align: center;
   padding: 20px;
