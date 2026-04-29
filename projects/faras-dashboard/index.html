@@ -13,13 +13,17 @@
     <h1>FARAS Dashboard</h1>
     <p>A dashboard concept for a fairer ride-hailing system.</p>
   </header>
+<main class="dashboard">
 
-  <main>
+  <section class="card">
+    <h2>Overview</h2>
+    <div class="overview-grid">
 
-    <section>
-  <h2>Overview</h2>
-
-  <div>
+    <article>
+  <h3>Driver Savings</h3>
+  <p id="driver-savings">0%</p>
+</article>
+ 
     <article>
       <h3>Total Rides</h3>
       <p id="total-rides">0</p>
@@ -39,21 +43,40 @@
       <h3>Traditional Platform Fee</h3>
       <p id="traditional-fee">25%</p>
     </article>
+
+    <article>
+  <h3>Driver Loss (Traditional)</h3>
+  <p id="driver-loss">0 SEK</p>
+</article>
+
   </div>
+<section class="card">
+    <h2>Why FARAS?</h2>
+    <p>
+      FARAS is a Web3 ride-hailing concept focused on fair fees,
+      transparent payments, and more control for drivers and riders.
+    </p>
+  </section>
+
+  <section class="card">
+  <h2>Add Ride</h2>
+
+  <form id="ride-form">
+    <label for="ride-fare">Ride fare (SEK)</label>
+    <input type="number" id="ride-fare" placeholder="Example: 250" required>
+
+    <button type="submit">Add Ride</button>
+  </form>
+  <button id="reset-btn">Reset Dashboard</button>
+  <button id="load-btn">Load Sample Data</button>
 </section>
 
-    <section>
-      <h2>Why FARAS?</h2>
-      <p>
-        FARAS is a Web3 ride-hailing concept focused on fair fees,
-        transparent payments, and more control for drivers and riders.
-      </p>
-    </section>
+  <section class="card">
+    <h2>Recent Rides</h2>
+    <ul id="rides-list"></ul>
+  </section>
 
-    <section>
-      <h2>Recent Rides</h2>
-      <ul id="rides-list"></ul>
-    </section>
+</main>
 
   </main>
 </body>

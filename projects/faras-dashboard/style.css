@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
   background-color: #020617;
 }
@@ -26,6 +26,23 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 20px;
+}
+.dashboard {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
 }
 
 section {
@@ -71,4 +88,44 @@ li {
   padding: 15px;
   border-radius: 8px;
   border-left: 4px solid #38bdf8;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+}
+
+#reset-btn {
+  margin-top: 15px;
+  background-color: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+}
+
+#reset-btn:hover {
+  background-color: #ef4444;
+  color: white;
 }
