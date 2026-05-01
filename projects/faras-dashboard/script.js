@@ -15,6 +15,7 @@ const totalRidesElement = document.querySelector("#total-rides");
 const driverEarningsElement = document.querySelector("#driver-earnings");
 const farasFeeElement = document.querySelector("#faras-fee");
 const traditionalFeeElement = document.querySelector("#traditional-fee");
+const averageFareElement = document.querySelector("#average-fare");
 const driverLossElement = document.querySelector("#driver-loss");
 const resetButton = document.querySelector("#reset-btn");
 const driverSavingsElement = document.querySelector("#driver-savings");
@@ -61,12 +62,19 @@ function updateOverview() {
   const driverLoss = totalDriverEarnings - totalTraditionalEarnings;
   const savingsPercent = traditionalFee - farasFee;
 
+  const totalFare = rides.reduce((sum, ride) => {
+  return sum + ride.fare;
+}, 0);
+
+const averageFare = rides.length > 0 ? totalFare / rides.length : 0;
+
   totalRidesElement.textContent = totalRides;
   driverEarningsElement.textContent = `${totalDriverEarnings.toFixed(2)} SEK`;
   farasFeeElement.textContent = "5%";
   traditionalFeeElement.textContent = "25%";
   driverLossElement.textContent = `${driverLoss.toFixed(2)} SEK`;
   driverSavingsElement.textContent = `${(savingsPercent * 100).toFixed(0)}%`;
+  averageFareElement.textContent = `${averageFare.toFixed(2)} SEK`;
 };
 
 function addRide(fare) {

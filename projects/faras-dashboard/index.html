@@ -20,21 +20,19 @@
     <div class="overview-grid">
 
     <article>
-  <h3>Driver Savings</h3>
-  <p id="driver-savings">0%</p>
-</article>
- 
-    <article>
       <h3>Total Rides</h3>
       <p id="total-rides">0</p>
     </article>
-
     <article>
       <h3>Driver Earnings</h3>
       <p id="driver-earnings">0 SEK</p>
     </article>
 
     <article>
+      <h3>Average Fare</h3>
+      <p id="average-fare">0 SEK</p>
+    </article>
+<article>
       <h3>FARAS Fee</h3>
       <p id="faras-fee">5%</p>
     </article>
@@ -48,6 +46,10 @@
   <h3>Driver Loss (Traditional)</h3>
   <p id="driver-loss">0 SEK</p>
 </article>
+ <article>
+      <h3>Driver Savings</h3>
+      <p id="driver-savings">0%</p>
+    </article>
 
   </div>
 <section class="card">
@@ -68,9 +70,28 @@
     <button type="submit">Add Ride</button>
   </form>
   <button id="reset-btn">Reset Dashboard</button>
-  <button id="load-btn">Load Sample Data</button>
+  
 </section>
+<section class="card">
+  <h2>Why FARAS Matters</h2>
+  <ul>
+    <li>Drivers keep more of their earnings through lower platform fees.</li>
+    <li>Payments can become more transparent with smart contract logic.</li>
+    <li>The system is inspired by real taxi industry experience in Sweden.</li>
+    <li>FARAS connects Web3 ideas with a real-world mobility problem.</li>
+  </ul>
+</section>
+<section class="card">
+  <h2>FARAS Lightpaper</h2>
+  <p>
+    This dashboard is based on the FARAS lightpaper, which explains the full idea,
+    problem, Web3 solution, and future roadmap.
+  </p>
 
+  <a class="lightpaper-link" href="../faras-lightpaper.pdf" target="_blank">
+    Read FARAS Lightpaper
+  </a>
+</section>
   <section class="card">
     <h2>Recent Rides</h2>
     <ul id="rides-list"></ul>
