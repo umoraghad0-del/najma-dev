@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vite/
+
+.env
+.DS_Store
+
+*.mp4
+*.mov
+*.zip
+*.rar
